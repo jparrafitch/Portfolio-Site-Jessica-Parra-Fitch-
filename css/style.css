@@ -44,6 +44,10 @@ body {
   color: #000000;
 }
 
+main {
+  padding-top: 133px;
+}
+
 h1, h2, h3, h4 {
   line-height: 1.4;
 }
@@ -116,3 +120,15 @@ a:active { /* selected link */
   background-color: #0097A7;
   color: #ffffff !important;
 }
+
+/* Layout styling */
+
+.container {
+  padding: 0 15px;
+}
+
+.row {
+  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+}
+
+#work .row { padding-bottom: 25px; border-bottom: 1px solid #4a4a4a; }
