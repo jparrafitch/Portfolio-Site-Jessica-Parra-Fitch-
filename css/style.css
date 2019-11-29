@@ -8,7 +8,7 @@ Other Color (Grey): #8BB0CB;
 */
 
 header {
-  background-color: #BA50A4;
+  background-color: #0097A7;
   text-align: center;
   padding: 10px;
   margin: 10px;
@@ -25,11 +25,11 @@ nav > ul > li {
   text-transform: uppercase;
   font-weight: 700;
   width: 100%
-  color: #4a4a4a;
+  color: #ffffff;
 }
 
 #hero {
-  background-color: #BA50A4;
+  background-color: #0097A7;
   padding: 20px 0;
   display: inline-block;
   text-align: center;
@@ -79,8 +79,17 @@ a {
   text-decoration: none; /* No underlining */
 }
 
+@keyframes color-change {
+  from {fill: #edc655;}
+  to {fill: #f76414;}
+}
+
+.sun {
+  animation: 4s color-change infinite alternate linear;
+}
+
 a:visited { /* visited link */
-  color: #8BB0CB;
+  color: #f1f8ff;
 }
 
 a:hover,
@@ -100,9 +109,10 @@ a:active { /* selected link */
   font-weight: 400;
   padding: 10px;
   border-radius: 3px;
-  border-bottom: 2px solid #800000; /* width of the border, type, color */
+  border-bottom: 2px solid #85146d; /* width of the border, type, color */
   transition-duration: 0.2s;
   transtition-property: opacity;
+
 }
 
 .button:hover {
@@ -137,6 +147,36 @@ a:active { /* selected link */
 }
 
 #work .row { padding-bottom: 25px; border-bottom: 1px solid #4a4a4a; }
+
+#aboutme h1 {
+  text-align: center;
+  margin:0;
+  padding: 0.67em 0;
+}
+
+#aboutme {
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+
+#PerfectProperties h1 {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+#PerfectProperties {
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 /* ==============================
 Medium devices (640px and larger)
@@ -173,12 +213,26 @@ Medium devices (640px and larger)
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
+  body {
+    font-size: 22px;
+  }
+
+  .col-lg-7 {
+    width:60%;
+  }
+
+  .col-lg-5 {
+    wifth:40%;
+  }
 }
 
 /* ==============================
 X-large devices (1440px or larger)
 ================================= */
 @media only screen and (min-width: 1440px) {
+  body {
+    font-size: 26px;
+  }
 }
 
 .container {
