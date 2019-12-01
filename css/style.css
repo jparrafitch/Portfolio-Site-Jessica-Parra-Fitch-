@@ -11,8 +11,8 @@ header {
   background-color: #0097A7;
   text-align: center;
   padding: 10px;
-  margin: 10px;
-  border-bottom: 3px solid #000000;
+  margin: 0 auto;
+  border-bottom: 3px solid #f1f8ff;
 }
 
 .logo {
@@ -21,7 +21,7 @@ header {
 
 nav > ul > li {
   display: inline-block;
-  padding: 0 15px;
+  padding: 0 20px;
   text-transform: uppercase;
   font-weight: 700;
   width: 100%
@@ -112,7 +112,6 @@ a:active { /* selected link */
   border-bottom: 2px solid #85146d; /* width of the border, type, color */
   transition-duration: 0.2s;
   transtition-property: opacity;
-
 }
 
 .button:hover {
@@ -122,6 +121,12 @@ a:active { /* selected link */
 
 .button:active { /* selected link */
   color: #0097A7;
+}
+
+.button.social {
+  background-color: transparent;
+  color: #0097A7 !important;
+  text-transform: uppercase;
 }
 
 .button.contact {
@@ -140,6 +145,7 @@ a:active { /* selected link */
 
 .container {
   padding: 0 15px;
+  max-width: 1200px;
 }
 
 .row {
@@ -166,7 +172,13 @@ a:active { /* selected link */
   padding: 0;
 }
 
-#PerfectProperties {
+#perfectproperties {
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+
+#contact {
   padding: 20px 0;
   display: inline-block;
   width: 100%;
