@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="72px" height="133px" viewBox="0 0 72 133" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59.1 (86144) - https://sketch.com -->
+    <title>button/logo</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="button/logo" transform="translate(-206.000000, 0.000000)">
+            <rect id="Rectangle" fill="#0097A7" x="206" y="0" width="72" height="133"></rect>
+            <text id="J" fill="#FFFFFF" font-family="JosefinSans-Regular, Josefin Sans" font-size="72" font-weight="normal">
+                <tspan x="215.36" y="68">J </tspan>
+            </text>
+            <text id="F" fill="#FFFFFF" font-family="JosefinSans-Regular, Josefin Sans" font-size="72" font-weight="normal">
+                <tspan x="229.296" y="115">F</tspan>
+            </text>
+            <text id="P" stroke="#FFFFFF" stroke-width="1" fill="#BA50A4" font-family="JosefinSans-Regular, Josefin Sans" font-size="80" font-weight="normal">
+                <tspan x="222.2" y="90">P</tspan>
+            </text>
+        </g>
+    </g>
+</svg>
