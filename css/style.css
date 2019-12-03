@@ -10,7 +10,7 @@ Other Color (Grey): #8BB0CB;
 header {
   background-color: #0097A7;
   padding: 10px;
-  border-bottom: 20px solid #ffffff;
+  border-bottom: 10px solid #ffffff;
 }
 
 .logo {
@@ -36,12 +36,11 @@ nav > ul > li {
 .hero {
   background-color: #0097A7;
   padding: 20px 0;
-  margin: -15px;
-  display: inline-block;
+  margin: 0px;
   text-align: center;
   color: #ffffff;
   width: 100%;
-  display: block;
+  display: inline-block;
 
 }
 
