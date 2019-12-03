@@ -7,22 +7,27 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:100,300,400,600,700&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="https://use.fontawesome.com/804c0cf99e.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://use.fontawesome.com/804c0cf99e.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <header>
       <div class="container">
-        <picture class="logo">
+        <div class="navtoggle" id="myNavtoggle">
+          <a href="index.html">
+          <picture class="logo">
             <source srcset="img/button.logo1.png" media="(max-width:767px)">
             <img src="img/button.logo1.png" alt="logo">
-        </picture>
-        <nav>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </nav>
+          </picture>
+          <nav>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html" onclick="menuToggle()">Contact</a></li>
+              <li><a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fas fa-bars"></i></a></li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </header>
   <main>
