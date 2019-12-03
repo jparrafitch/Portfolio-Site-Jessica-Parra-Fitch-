@@ -9,9 +9,8 @@ Other Color (Grey): #8BB0CB;
 
 header {
   background-color: #0097A7;
-  text-align: center;
   padding: 10px;
-  border-bottom: 20px solid #f1f8ff;
+  border-bottom: 20px solid #ffffff;
 }
 
 .logo {
@@ -47,7 +46,7 @@ nav > ul > li {
 }
 
 body {
-  background-color: #f1f8ff;
+  background-color: #ffffff;
   font-family: 'Josefin Sans', sans-serif;
   font-size: 16px; /* Sets the font size to 16px */
   font-weight: 400; /* Sets the font weight to 300 */
@@ -63,21 +62,21 @@ h1, h2, h3, h4 {
   line-height: 1.4;
 }
 h1 {
-  font-size: 2.75em;
+  font-size: 2.5em;
   font-weight: 700;
 }
 
 h2 {
-  font-size: 2.25em;
+  font-size: 2em;
   font-weight: 600;
 }
 
 h3 {
-  font-size: 1.75em;
+  font-size: 1.7em;
   font-weight: 400;
 }
 h4 {
-  font-size: 1.35em;
+  font-size: 1.3em;
   font-weight: 400;
 }
 
@@ -130,12 +129,6 @@ a:active { /* selected link */
   color: #0097A7;
 }
 
-.button.social {
-  background-color: transparent;
-  color: #0097A7 !important;
-  text-transform: uppercase;
-}
-
 .button.contact {
   background-color: transparent;
   color: #0097A7 !important;
@@ -153,6 +146,8 @@ a:active { /* selected link */
 .container {
   padding: 0 15px;
   max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .row {
@@ -191,11 +186,6 @@ a:active { /* selected link */
   width: 100%;
 }
 
-.container {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-}
 
 /* ==============================
 Medium devices (640px and larger)
@@ -206,12 +196,33 @@ Medium devices (640px and larger)
     padding: 20px 0 13px;
   }
 
-  nav {
-  width: auto;
-  text-align: right;
-  float: right
-  margin-top: 4px;
+  nav > ul > li {
+    display: inline-block;
+    padding: 0 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    width: 100%
+    color: #ffffff;
   }
+
+  .navtoggle.responsive nav {
+    padding: 24px 0 0;
+  }
+
+  .navtoggle.responsive li  {
+    display: block;
+    padding: 10px 0;
+  }
+
+  .navtoggle li:(:last-child) {
+    display: none;
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+    padding: 0 0 10px;
+  }
+
 
   .col-md-6 {
   width: 50%;
@@ -233,6 +244,17 @@ Medium devices (640px and larger)
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
+  nav {
+    width: auto;
+    text-align: right;
+    float: right
+    margin-top: 4px;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
+  }
+
   body {
     font-size: 22px;
   }
