@@ -7,4 +7,4 @@ console.log("Hi! Welcome to my portfolio!")
     } else {
       x.className = 'navtoggle';
     }
-  
+  }
