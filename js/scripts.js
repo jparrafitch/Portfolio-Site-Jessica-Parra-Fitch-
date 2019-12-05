@@ -1,6 +1,5 @@
 console.log("Hi! Welcome to my portfolio!")
 
-const navSlide = () => {
   function menuToggle() {
     var x = document.getElementById('myNavtoggle');
     if (x.className === 'navtoggle') {
@@ -8,4 +7,4 @@ const navSlide = () => {
     } else {
       x.className = 'navtoggle';
     }
-  }
+  
