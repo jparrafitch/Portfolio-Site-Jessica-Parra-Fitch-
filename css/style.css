@@ -6,7 +6,6 @@ Other Color (Turquoise): #0097A7;
 Other Color (Magenta): #BA50A4;
 Other Color (Grey): #8BB0CB;
 */
-
 * {
   box-sizing: border-box;
 }
@@ -18,21 +17,20 @@ header {
 }
 
 .logo {
-    max-height: 100px;
-    float: left;
-    margin: -40px;
+  max-height: 100px;
+  float: left;
+  margin: -40px;
 }
 
-nav > ul > li {
+nav>ul>li {
   display: inline-block;
   padding: 0 20px;
   text-transform: uppercase;
   font-weight: 700;
-  width: 100%
-  color: #ffffff;
+  width: 100% color: #ffffff;
 }
 
-.sociallinks > ul > li {
+.sociallinks>ul>li {
   display: inline-block;
   padding: 0 10px;
 }
@@ -45,15 +43,17 @@ nav > ul > li {
   color: #ffffff;
   width: 100%;
   display: inline-block;
-
 }
 
 body {
   background-color: #ffffff;
   font-family: 'Josefin Sans', sans-serif;
-  font-size: 16px; /* Sets the font size to 16px */
-  font-weight: 400; /* Sets the font weight to 300 */
-  line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
+  font-size: 16px;
+  /* Sets the font size to 16px */
+  font-weight: 400;
+  /* Sets the font weight to 300 */
+  line-height: 1.6;
+  /* Sets the line-height to 1.6 * the font-size */
   color: #000000;
 }
 
@@ -64,6 +64,7 @@ main {
 h1, h2, h3, h4 {
   line-height: 1.4;
 }
+
 h1 {
   font-size: 2.5em;
   font-weight: 700;
@@ -78,6 +79,7 @@ h3 {
   font-size: 1.7em;
   font-weight: 400;
 }
+
 h4 {
   font-size: 1.3em;
   font-weight: 400;
@@ -85,12 +87,18 @@ h4 {
 
 a {
   color: #0097A7;
-  text-decoration: none; /* No underlining */
+  text-decoration: none;
+  /* No underlining */
 }
 
 @keyframes color-change {
-  from {fill: #edc655;}
-  to {fill: #f76414;}
+  from {
+    fill: #edc655;
+  }
+
+  to {
+    fill: #f76414;
+  }
 }
 
 .sun {
@@ -98,8 +106,13 @@ a {
 }
 
 @keyframes cloud-move {
-  from {transform: translate(0,50px);}
-  to {transform: translate(200px,50px);}
+  from {
+    transform: translate(0, 50px);
+  }
+
+  to {
+    transform: translate(200px, 50px);
+  }
 }
 
 .cloud-front {
@@ -107,15 +120,21 @@ a {
 }
 
 @keyframes cloud-move-reverse {
-  from {transform: translate(446px,48px);}
-  to {transform: translate(100px, 48px);}
+  from {
+    transform: translate(446px, 48px);
+  }
+
+  to {
+    transform: translate(100px, 48px);
+  }
 }
 
 .cloud-back {
   animation: 34s cloud-move-reverse infinite alternate linear;
 }
 
-a:visited { /* visited link */
+a:visited {
+  /* visited link */
   color: #f1f8ff;
 }
 
@@ -124,29 +143,34 @@ a:active {
   text-decoration: underline;
 }
 
-a:hover{
+a:hover {
   color: #BA50A4;
   text-decoration: underline;
 }
 
 .button {
-  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  display: inline-block;
+  /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   background-color: #BA50A4;
-  color: #ffffff !important; /* needed to override the default link color */
+  color: #ffffff !important;
+  /* needed to override the default link color */
   font-weight: 400;
   padding: 10px;
   border-radius: 3px;
-  border-bottom: 2px solid #85146d; /* width of the border, type, color */
+  border-bottom: 2px solid #85146d;
+  /* width of the border, type, color */
   transition-duration: 0.2s;
   transtition-property: opacity;
 }
 
 .button:hover {
-  opacity: 0.8; /* Reduces the opacity of the button to 80% */
+  opacity: 0.8;
+  /* Reduces the opacity of the button to 80% */
   text-decoration: none;
 }
 
-.button:active { /* selected link */
+.button:active {
+  /* selected link */
   color: #0097A7;
 }
 
@@ -163,7 +187,6 @@ a:hover{
 }
 
 /* Layout styling */
-
 .container {
   padding: 0 15px;
   max-width: 1200px;
@@ -172,16 +195,21 @@ a:hover{
 }
 
 .row {
-  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+  margin: 25px 0;
+  /* 25px top and bottom, 0 left and right */
+}
+table {
+  width: 800px;
 }
 
-
-
-#work .row { padding-bottom: 25px; border-bottom: 1px solid #4a4a4a; }
+td {
+  display: table-cell;
+  vertical-align: text-top;
+}
 
 #aboutme h1 {
   text-align: center;
-  margin:0;
+  margin: 0;
   padding: 0.67em 0;
 }
 
@@ -209,7 +237,6 @@ a:hover{
   width: 100%;
 }
 
-
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
@@ -219,20 +246,19 @@ Medium devices (640px and larger)
     padding: 20px 0 13px;
   }
 
-  nav > ul > li {
+  nav>ul>li {
     display: inline-block;
     padding: 0 20px;
     text-transform: uppercase;
     font-weight: 700;
-    width: 100%
-    color: #ffffff;
+    width: 100% color: #ffffff;
   }
 
   .navtoggle.responsive nav {
     padding: 24px 0 0;
   }
 
-  .navtoggle.responsive li  {
+  .navtoggle.responsive li {
     display: block;
     padding: 10px 0;
   }
@@ -246,21 +272,19 @@ Medium devices (640px and larger)
     padding: 0 0 10px;
   }
 
-
   .col-md-6 {
-  width: 50%;
+    width: 50%;
   }
 
   [class*="col-"] {
-  float: left;
+    float: left;
   }
 
   .row::after {
-  content: "";
-  clear: both;
-  display: table;
+    content: "";
+    clear: both;
+    display: table;
   }
-
 }
 
 /* ==============================
@@ -270,8 +294,7 @@ Large devices (1024px or larger)
   nav {
     width: auto;
     text-align: right;
-    float: right
-    margin-top: 4px;
+    float: right margin-top: 4px;
   }
 
   .navtoggle li:last-child {
@@ -283,11 +306,11 @@ Large devices (1024px or larger)
   }
 
   .col-lg-7 {
-    width:60%;
+    width: 60%;
   }
 
   .col-lg-5 {
-    wifth:40%;
+    wifth: 40%;
   }
 }
 
