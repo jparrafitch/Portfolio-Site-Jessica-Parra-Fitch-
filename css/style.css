@@ -2,7 +2,7 @@
 Colors used:
 Primary Color (LightBackground): #f1f8ff;
 Secondary Color (Black): #000000;
-Other Color (Turquoise): #0097A7;
+Other Color (Turquoise): #008391;
 Other Color (Magenta): #BA50A4;
 Other Color (Grey): #8BB0CB;
 */
@@ -11,7 +11,7 @@ Other Color (Grey): #8BB0CB;
 }
 
 header {
-  background-color: #0097A7;
+  background-color: #008391;
   padding: 40px;
   border-bottom: 10px solid #ffffff;
 }
@@ -53,7 +53,7 @@ nav > ul > li {
 }
 
 .hero {
-  background-color: #0097A7;
+  background-color: #008391;
   padding: 20px 0;
   margin: 0px;
   text-align: center;
@@ -193,9 +193,9 @@ a:hover {
 
 .button.contact {
   background-color: transparent;
-  color: #0097A7 !important;
+  color: #008391 !important;
   text-transform: uppercase;
-  border: 2px solid #0097A7;
+  border: 2px solid #008391;
 }
 
 .button.contact:hover {
