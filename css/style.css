@@ -12,34 +12,69 @@ Other Color (Grey): #8BB0CB;
 
 header {
   background-color: #008391;
-  padding: 40px;
-  border-bottom: 10px solid #ffffff;
+  font-size: 0.75em;
+  padding: 40px 40px;
+  box-shadow: 0px 4px 5px 0 rgba(50, 50, 50, 0.75);
+  position: fixed;
+  width: 100%;
 }
 
-nav > ul > li {
-  display: inline-block;
+/* Nav bar styling */
+
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+nav > ul > li > a:hover,
+nav > ul > li > a:focus {
+  color: #BA50A4;
+}
+
+nav > ul > li > a:active { /* selected link */
+  color: #BA50A4;
 }
 
 .navtoggle li:not(:last-child) {
   display: none;
-  padding: 10px;
+}
+
+.navtoggle,
+.navtoggle.responsive {
+  position: relative;
 }
 
 .navtoggle.responsive nav {
   padding: 24px 0 0;
 }
 
+.navtoggle li .icon {
+  position: absolute;
+  padding-right: 0;
+  right: 0;
+  top: 2px;
+  font-size: 22px;
+}
+
 .navtoggle.responsive li {
   display: block;
   padding: 10px 0;
+  border-top: 1px solid #fff;
 }
 
-.navtoggle li .icon {
-  position: absolute;
-  right: 0;
-  top: 50px;
-  font-size: 30px;
+.navtoggle.responsive li:last-child {
+  padding: 0 0 10px;
 }
+
+/* Logo */
 
 .logo {
   max-height: 100px;
@@ -47,15 +82,20 @@ nav > ul > li {
   margin: -40px;
 }
 
+/* Social Links */
+
 .sociallinks>ul>li {
   display: inline-block;
-  padding: 0 10px;
+  padding: 0px 10px 0px;
+  margin-left: 0px;
+  float: center;
 }
+
+/* Body */
 
 .hero {
   background-color: #008391;
-  padding: 20px 0;
-  margin: 0px;
+  padding: 30px 30px 20px;
   text-align: center;
   color: #ffffff;
   width: 100%;
@@ -75,7 +115,7 @@ body {
 }
 
 main {
-  padding-top: 0px;
+  padding-top: 55px;
 }
 
 h1, h2, h3, h4 {
@@ -88,13 +128,13 @@ h1 {
 }
 
 h2 {
-  font-size: 2em;
+  font-size: 2.4em;
   font-weight: 600;
 }
 
 h3 {
-  font-size: 1.7em;
-  font-weight: 400;
+  font-size: 2em;
+  font-weight: 600;
 }
 
 h4 {
@@ -102,66 +142,31 @@ h4 {
   font-weight: 400;
 }
 
+img:not(#logo1) {
+  width: inherit;
+  margin: auto;
+  display: block;
+}
+
 a {
-  color: #8BB0CB;
+  color: #ffffff;
   text-decoration: none;
   /* No underlining */
 }
 
-@keyframes color-change {
-  from {
-    fill: #edc655;
-  }
-
-  to {
-    fill: #f76414;
-  }
-}
-
-.sun {
-  animation: 4s color-change infinite alternate linear;
-}
-
-@keyframes cloud-move {
-  from {
-    transform: translate(0, 50px);
-  }
-
-  to {
-    transform: translate(200px, 50px);
-  }
-}
-
-.cloud-front {
-  animation: 30s cloud-move infinite alternate linear;
-}
-
-@keyframes cloud-move-reverse {
-  from {
-    transform: translate(446px, 48px);
-  }
-
-  to {
-    transform: translate(100px, 48px);
-  }
-}
-
-.cloud-back {
-  animation: 34s cloud-move-reverse infinite alternate linear;
-}
-
 a:visited {
   /* visited link */
-  color: #f1f8ff;
+  color: #ffffff;
 }
 
 a:active {
-  color: #BA50A4;
+  color: #E3FF00;
   text-decoration: underline;
 }
 
-a:hover {
-  color: #BA50A4;
+a:hover,
+a:focus {
+  color: #E3FF00;
   text-decoration: underline;
 }
 
@@ -177,11 +182,12 @@ a:hover {
   border-bottom: 2px solid #85146d;
   /* width of the border, type, color */
   transition-duration: 0.2s;
-  transtition-property: opacity;
-}
+ }
 
-.button:hover {
+.button:hover
+.button:focus {
   opacity: 0.8;
+  color: #BA50A4;
   /* Reduces the opacity of the button to 80% */
   text-decoration: none;
 }
@@ -189,6 +195,7 @@ a:hover {
 .button:active {
   /* selected link */
   color: #0097A7;
+  opacity: 0.8;
 }
 
 .button.contact {
@@ -199,14 +206,14 @@ a:hover {
 }
 
 .button.contact:hover {
-  background-color: #0097A7;
+  background-color: #008391;
   color: #ffffff !important;
 }
 
 /* Layout styling */
 .container {
-  padding: 0 15px;
-  max-width: 1200px;
+  padding: 0px 15px;
+  max-width: auto;
   margin-left: auto;
   margin-right: auto;
 }
@@ -214,15 +221,6 @@ a:hover {
 .row {
   margin: 25px 0;
   /* 25px top and bottom, 0 left and right */
-}
-
-table {
-  width: 800px;
-}
-
-td {
-  display: table-cell;
-  vertical-align: text-top;
 }
 
 #aboutme h1 {
@@ -237,58 +235,106 @@ td {
   width: 100%;
 }
 
+#work h2{
+  margin-left: 50px;
+}
+
 #PerfectProperties h1 {
   text-align: center;
   margin: 0;
   padding: 0;
 }
 
-#perfectproperties {
-  padding: 20px 0;
-  display: inline-block;
+.perfectproperties {
+  padding: 20px 0px;
+  display: block;
+  margin: auto
   width: 100%;
 }
 
-#contact {
-  padding: 20px 0;
+.contact {
+  padding: 20px;
   display: inline-block;
-  width: 100%;
+  width: auto;
 }
+
+#contact {
+  text-align: center;
+
+}
+
+#Skills {
+  margin-left: 60px;
+}
+
+#Tools {
+  margin-left: -30px;
+}
+
+/* ==============================
+Small devices (640px and smaller)
+================================= */
+
+@media only screen and (max-width: 640px) {
+    header {
+      text-align: unset;
+    }
+
+    #Skills {
+      margin-left: 15px;
+    }
+
+    #Tools {
+      margin-left: 15px;
+    }
+  }
+
 
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
   header {
-    text-align: right;
-    padding: 20px 0 13px;
+    text-align: unset;
+    padding: 30px 0 20px 10px;
   }
 
-  nav>ul>li {
-    display: inline-block;
-    padding: 0 20px;
-    text-transform: uppercase;
-    font-weight: 700;
-    width: 100%;
-    color: #ffffff;
+  main {
+    padding-top: 80px;
   }
 
-  .navtoggle.responsive nav {
-    padding: 24px 0 0;
-  }
-
-  .navtoggle.responsive li {
-    display: block;
-    padding: 10px 0;
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
   }
 
   .navtoggle li:not(:last-child) {
     display: inline-block;
-    padding: 0 0 10px;
   }
 
   .navtoggle li:last-child {
-  display: none;
+    display: none;
+  }
+
+  nav > ul {
+    margin: 1em 0;
+  }
+
+  nav > ul > li {
+    display: inline-block;
+  }
+
+  .logo {
+    max-height: 100px;
+    float: left;
+    margin: -40px;
+  }
+
+  img:not(#logo1) {
+    width: 70%;
+    margin: auto;
+    display: block;
   }
 
   .col-md-6 {
@@ -297,6 +343,7 @@ Medium devices (640px and larger)
 
   [class*="col-"] {
     float: left;
+    padding: 20px;
   }
 
   .row::after {
@@ -312,22 +359,17 @@ Large devices (1024px or larger)
 @media only screen and (min-width: 1024px) {
   header {
     text-align: right;
-    padding: 90px 13px;
+    padding: 30px 20px 20px 20px;
   }
 
-  nav {
-    width: auto;
-    text-align: right;
-    float: right;
-    margin-top: -70px;
-  }
-
-  .navtoggle li:last-child {
-    display: none;
+  img:not(#logo1) {
+    width: 70%;
+    margin: auto;
+    display: block;
   }
 
   body {
-    font-size: 22px;
+    font-size: 20px;
   }
 
   .col-lg-7 {
@@ -337,39 +379,19 @@ Large devices (1024px or larger)
   .col-lg-5 {
     width: 40%;
   }
+
+  .col-lg-6 {
+    width: 50%;
+  }
+
+  .container {
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 /* ==============================
 X-large devices (1440px or larger)
 ================================= */
 @media only screen and (min-width: 1440px) {
-
-  nav {
-    display: inline-block;
-    width: auto;
-    float: right;
-    margin-top: -100px;
-  }
-
-  .navtoggle li:last-child {
-    display: none;
-  }
-
-  body {
-    font-size: 26px;
-  }
-
-  .col-lg-11 {
-    width: 70%;
-  }
-
-  .col-lg-5 {
-    width: 30%;
-  }
-}
-
-.container {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-}
