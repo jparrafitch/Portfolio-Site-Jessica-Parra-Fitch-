@@ -86,9 +86,11 @@ nav > ul > li > a:active { /* selected link */
 
 .sociallinks>ul>li {
   display: inline-block;
+  width: 10em;
   padding: 0px 10px 0px;
   margin-left: 0px;
   float: center;
+
 }
 
 /* Body */
@@ -182,10 +184,6 @@ a:focus {
   border-bottom: 2px solid #85146d;
   /* width of the border, type, color */
   transition-duration: 0.2s;
- }
-
- .resumebutton {
-   float: right;
  }
 
 .button:hover
