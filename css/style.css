@@ -95,6 +95,7 @@ nav > ul > li > a:active { /* selected link */
 .sociallinks>ul>li {
   padding: 0px 10px 0px;
   margin-left: 0px;
+  display: inline;
   float: center;
 }
 
