@@ -50,10 +50,11 @@ nav > ul > li > a:active { /* selected link */
 .navtoggle,
 .navtoggle.responsive {
   position: relative;
+  float: right;
 }
 
 .navtoggle.responsive nav {
-  padding: 24px 0 0;
+  padding: 40px 0 0;
 }
 
 .navtoggle li .icon {
@@ -84,12 +85,23 @@ nav > ul > li > a:active { /* selected link */
 
 /* Social Links */
 
-.sociallinks>ul>li {
+.sociallinks {
   display: inline-block;
+}
+
+.sociallinks>ul {
+  width: 12em;
+  padding-inline-start: 6px;
+}
+
+.sociallinks>ul>li {
   padding: 0px 10px 0px;
   margin-left: 0px;
+  display: inline;
   float: center;
 }
+
+
 
 /* Body */
 
@@ -142,8 +154,8 @@ h4 {
   font-weight: 400;
 }
 
-img:not(#logo1) {
-  width: inherit;
+img {
+  width: 100%;
   margin: auto;
   display: block;
 }
@@ -178,6 +190,7 @@ a:focus {
   /* needed to override the default link color */
   font-weight: 400;
   padding: 10px;
+  float: right;
   border-radius: 3px;
   border-bottom: 2px solid #85146d;
   /* width of the border, type, color */
