@@ -84,14 +84,21 @@ nav > ul > li > a:active { /* selected link */
 
 /* Social Links */
 
-.sociallinks>ul>li {
+.sociallinks {
   display: inline-block;
-  width: 10em;
+}
+
+.sociallinks>ul {
+  width: 12em;
+}
+
+.sociallinks>ul>li {
   padding: 0px 10px 0px;
   margin-left: 0px;
   float: center;
-
 }
+
+
 
 /* Body */
 
