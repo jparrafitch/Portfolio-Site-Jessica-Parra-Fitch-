@@ -36,11 +36,11 @@ nav > ul > li > a {
 
 nav > ul > li > a:hover,
 nav > ul > li > a:focus {
-  color: #BA50A4;
+  color: #AFE4db;
 }
 
 nav > ul > li > a:active { /* selected link */
-  color: #BA50A4;
+  color: #91f4ff;
 }
 
 .navtoggle li:not(:last-child) {
@@ -160,13 +160,13 @@ a:visited {
 }
 
 a:active {
-  color: #E3FF00;
+  color: #ffd9b3;
   text-decoration: underline;
 }
 
 a:hover,
 a:focus {
-  color: #E3FF00;
+  color: #ffd9b3;
   text-decoration: underline;
 }
 
@@ -372,18 +372,6 @@ Large devices (1024px or larger)
     font-size: 20px;
   }
 
-  .col-lg-7 {
-    width: 60%;
-  }
-
-  .col-lg-5 {
-    width: 40%;
-  }
-
-  .col-lg-6 {
-    width: 50%;
-  }
-
   .container {
     max-width: 1600px;
     margin-left: auto;
@@ -395,3 +383,11 @@ Large devices (1024px or larger)
 X-large devices (1440px or larger)
 ================================= */
 @media only screen and (min-width: 1440px) {
+
+
+  .container {
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
