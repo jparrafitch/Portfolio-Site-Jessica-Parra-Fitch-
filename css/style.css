@@ -90,6 +90,7 @@ nav > ul > li > a:active { /* selected link */
 
 .sociallinks>ul {
   width: 12em;
+  padding-inline-start: 6px;
 }
 
 .sociallinks>ul>li {
