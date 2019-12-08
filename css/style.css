@@ -50,10 +50,11 @@ nav > ul > li > a:active { /* selected link */
 .navtoggle,
 .navtoggle.responsive {
   position: relative;
+  float: right;
 }
 
 .navtoggle.responsive nav {
-  padding: 24px 0 0;
+  padding: 30px 0 0;
 }
 
 .navtoggle li .icon {
@@ -153,8 +154,8 @@ h4 {
   font-weight: 400;
 }
 
-img:not(#logo1) {
-  width: inherit;
+img {
+  width: 100%;
   margin: auto;
   display: block;
 }
