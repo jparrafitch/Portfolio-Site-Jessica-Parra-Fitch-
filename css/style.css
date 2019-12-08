@@ -184,6 +184,10 @@ a:focus {
   transition-duration: 0.2s;
  }
 
+ .resumebutton {
+   float: right;
+ }
+
 .button:hover
 .button:focus {
   opacity: 0.8;
