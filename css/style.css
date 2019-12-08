@@ -213,6 +213,7 @@ a:focus {
 
 .button.contact {
   background-color: transparent;
+  float: none;
   color: #008391 !important;
   text-transform: uppercase;
   border: 2px solid #008391;
